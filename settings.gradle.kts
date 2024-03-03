@@ -7,4 +7,4 @@
 
 rootProject.name = "golang-pkg"
 
-#include("examples/wsgame")
+include("examples/wsgame")
