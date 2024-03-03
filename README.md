@@ -1,12 +1,10 @@
-# Standard Go Project Layout
+# Basic Project Layout
 
-Translations:
-
-* 
+This is an outline to create and deploy a new golang based project.
 
 ## Overview
 
-This is a basic layout for Go application projects.
+Currently this is a skeleton of subdirectories based on a reference package example.
 
 
 
@@ -22,11 +20,11 @@ Private application and library code.
 
 ### `/pkg`
 
-Library code that's ok to use by external applications (e.g., `/pkg/mypubliclib`). Other projects will import these libraries expecting them to work, so think twice before you put something here :-) Note that the `internal` directory is a better way to ensure your private packages are not importable because it's enforced by Go. The `/pkg` directory is still a good way to explicitly communicate that the code in that directory is safe for use by others. The [`I'll take pkg over internal`](https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/) blog post by Travis Jeffery provides a good overview of the `pkg` and `internal` directories and when it might make sense to use them.
+Library code that's ok to use by external applications.
 
 ### `/vendor`
 
-Application dependencies (managed manually or by your favorite dependency management tool like the new built-in [`Go Modules`](https://github.com/golang/go/wiki/Modules) feature). The `go mod vendor` command will create the `/vendor` directory for you. Note that you might need to add the `-mod=vendor` flag to your `go build` command if you are not using Go 1.14 where it's on by default.
+Application dependencies.
 
 
 ## Service Application Directories
@@ -59,9 +57,9 @@ Scripts to perform various build, install, analysis, etc operations.
 
 Packaging and Continuous Integration.
 
-### `/deployments`
+### `/deploy`
 
-IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, terraform). Note that in some repos (especially apps deployed with kubernetes) this directory is called `/deploy`.
+IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, terraform).
 
 ### `/test`
 
