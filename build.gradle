@@ -1,0 +1,15 @@
+
+plugins {
+    id 'com.github.blindpirate.gogradle' version '0.11.4'
+}
+
+golang {
+    packagePath = 'github.com/nater0000/golang-pkg'
+}
+
+dependencies {
+    golang {
+        build name:'github.com/mvdan/xurls', version:'d315b61cf6727664f310fa87b3197e9faf2a8513'
+        test name:'github.com/stretchr/testify', version:'69483b4bd14f5845b5a1e55bca19e954e827f1d0'
+    }
+}
