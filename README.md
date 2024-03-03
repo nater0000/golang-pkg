@@ -103,11 +103,12 @@ Website data
 
     [![Go Report Card](https://goreportcard.com/badge/github.com/golang-standards/project-layout?style=flat-square)](https://goreportcard.com/report/github.com/nater0000/golang-pkg)
 
-* ~~[GoDoc](http://godoc.org) - It will provide online version of your GoDoc generated documentation.
+* [GoDoc](http://godoc.org) - It will provide online version of your GoDoc generated documentation.
 
     [![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](http://godoc.org/github.com/nater0000/golang-pkg)
 
 * [Pkg.go.dev](https://pkg.go.dev) - Pkg.go.dev is a new destination for Go discovery & docs.
+
 	[![Go Reference](https://pkg.go.dev/badge/github.com/nater0000/golang-pkg.svg)](https://pkg.go.dev/github.com/nater0000/golang-pkg)
 
 * Release - It will show the latest release number for your project.
